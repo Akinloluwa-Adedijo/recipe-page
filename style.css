@@ -1,3 +1,103 @@
+@font-face {
+  font-family: Outfit;
+  src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Young-Serif;
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
 body {
   margin: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  padding: 50px;
+}
+
+.card-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  gap: 20px;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 36px;
+  font-family: Young-Serif, Arial;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.card-recipe-description {
+  font-size: 14px;
+  font-family: Outfit, Arial;
+  font-weight: 400;
+  max-width: 700px;
+  line-height: 140%;
+  letter-spacing: 0;
+  color: rgb(96, 96, 96);
+}
+
+.card-preparation {
+  font-family: Outfit, "Times New Roman", Times, serif;
+
+  padding: 20px;
+  background-color: rgba(255, 247, 252, 255);
+  border-radius: 14px;
+}
+
+.preparation-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #6f304a;
+}
+li {
+  padding-left: 20px;
+}
+
+.preparation-list ul li {
+  color: #685f62;
+  font-size: 14px;
+}
+
+.card-ingredients,
+.card-instructions {
+  border-bottom: 2px solid rgba(241, 241, 241, 255);
+}
+.ingredients-title,
+.instructions-title {
+  color: #7a4434;
+  font-size: 24px;
+  font-family: Young-Serif, Arial, Helvetica, sans-serif;
+}
+
+.ingredients-list,
+.instructions-list {
+  color: #706c68;
+  font-family: Outfit, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.ingredients-list ul li,
+.instructions-list ol li {
+  color: #7a4434;
+  margin-bottom: 10px;
+}
+
+li span {
+  color: #848383;
 }
